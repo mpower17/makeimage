@@ -1,0 +1,25 @@
+{
+  "name": "makeimage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js --PORT=443",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mpower17/makeimage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mpower17/makeimage/issues"
+  },
+  "homepage": "https://github.com/mpower17/makeimage#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "sharp": "^0.29.3"
+  }
+}
