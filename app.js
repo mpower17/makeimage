@@ -1,5 +1,6 @@
 import express from "express";
 import sharp from "sharp";
+import imageSize from "image-size";
 
 const CORS = {
   'Access-Control-Allow-Origin': '*',
@@ -24,6 +25,17 @@ app.get("/makeimage", (r) => {
       r.res.download("./img/output.jpeg");
     });
 });
+
+app.post("/size2json", img.single("image"), async (req, res) => {
+  const path = req.file.path;
+  imageSize(path, function (err, dimensions) {
+      res.send(
+          {
+              width: dimensions.width,
+              height: dimensions.height
+          });
+  });
+})
 
 app.all('*', login)
 

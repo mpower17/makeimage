@@ -20,6 +20,7 @@
   "homepage": "https://github.com/mpower17/makeimage#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "image-size": "^1.0.0",
     "sharp": "^0.29.3"
   }
 }
