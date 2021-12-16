@@ -1,6 +1,9 @@
 import express from "express";
 import sharp from "sharp";
 import imageSize from "image-size";
+import multer from "multer";
+
+const img = multer({dest: "./img"});
 
 const CORS = {
   'Access-Control-Allow-Origin': '*',
